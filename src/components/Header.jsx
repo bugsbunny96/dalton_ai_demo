@@ -31,6 +31,15 @@ const Header = () => {
                         About Us 1
                     </NavLink>
                     <NavLink
+                        to="/authentication"
+                        className={({ isActive }) =>
+                            `transition-colors duration-300 ${isActive ? "text-pink-500" : "hover:text-pink-500"
+                            }`
+                        }
+                    >
+                        Login/Signup
+                    </NavLink>
+                    <NavLink
                         to="/about-2"
                         className={({ isActive }) =>
                             `transition-colors duration-300 ${isActive ? "text-pink-500" : "hover:text-pink-500"
@@ -39,40 +48,13 @@ const Header = () => {
                     >
                         About Us 2
                     </NavLink>
-                    <NavLink
-                        to="/universities"
-                        className={({ isActive }) =>
-                            `transition-colors duration-300 ${isActive ? "text-pink-500" : "hover:text-pink-500"
-                            }`
-                        }
-                    >
-                        Universities
-                    </NavLink>
-                    <NavLink
-                        to="/products"
-                        className={({ isActive }) =>
-                            `transition-colors duration-300 ${isActive ? "text-pink-500" : "hover:text-pink-500"
-                            }`
-                        }
-                    >
-                        Our Products
-                    </NavLink>
-                    <NavLink
-                        to="/services"
-                        className={({ isActive }) =>
-                            `transition-colors duration-300 ${isActive ? "text-pink-500" : "hover:text-pink-500"
-                            }`
-                        }
-                    >
-                        Our Services
-                    </NavLink>
                 </nav>
 
                 {/* Right Section */}
                 <div className="flex items-center space-x-4">
                     {/* Search Icon */}
                     <button className="focus:outline-none">
-                        <i className="fas fa-search text-gray-800"></i>
+                        🔍
                     </button>
 
                     {/* "Talk to Experts" Button */}
