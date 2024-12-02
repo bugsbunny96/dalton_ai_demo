@@ -14,7 +14,7 @@ const App = () => {
           <Route path="/" element={<AnimatedSlider />} />
           <Route path="/about-1" element={<AnimatedSlider />} />
           <Route path="/about-2" element={<About />} />
-          <Route path="/login" element={<LoginSignup />} />
+          <Route path="/authentication" element={<LoginSignup />} />
         </Routes>
       </Layout>
     </Router>
